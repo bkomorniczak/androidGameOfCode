@@ -1,5 +1,6 @@
 package com.example.basia.gameofcode;
 
+import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.support.v7.app.AppCompatActivity;
@@ -48,6 +49,10 @@ public class CharacterActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Toast.makeText(CharacterActivity.this,
                         "AAAAAAAAaaa!", Toast.LENGTH_SHORT).show();
+
+                Intent intent = new Intent(CharacterActivity.this, MainActivity.class);
+
+                startActivity(intent);
             }
         });
 
